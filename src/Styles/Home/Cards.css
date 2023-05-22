@@ -1,5 +1,64 @@
 .cardscontainer {
+  width: 85%;
+  background-color: var(--primary-grey);
+  margin: 3rem auto;
+  border-radius: 19px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(8rem, 1fr));
+  grid-auto-rows: 1fr;
+}
+
+.cardscontainer:before {
+  content: "";
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.cardscontainer > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
 }
 
 .card {
+  padding: 2rem 1.5rem;
+  position: relative;
+}
+
+.card__image {
+  width: 100%;
+  border-radius: 14px;
+  height: 100%;
+  object-fit: cover;
+  text-align: left;
+  filter: brightness(80%);
+}
+
+.card__text {
+  position: absolute;
+  display: flex;
+  font-size: 18px;
+  width: 50%;
+  bottom: 1.5rem;
+  left: 2.5rem;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .cardscontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 1rem auto;
+    background-color: white;
+  }
+
+  .cardscontainer:before {
+    display: none;
+  }
+
+  .card {
+    padding: 1rem 0;
+  }
 }

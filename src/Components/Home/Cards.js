@@ -7,7 +7,12 @@ function Cards() {
       {annonces.map(function (annonce) {
         return (
           <div key={annonce.id} className="card">
-            {annonce.title}
+            <img
+              src={annonce.cover}
+              alt="Image de l'annonce"
+              className="card__image"
+            />
+            <p className="card__text">{annonce.title}</p>
           </div>
         );
       })}

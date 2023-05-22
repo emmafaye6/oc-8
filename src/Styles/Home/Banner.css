@@ -1,0 +1,24 @@
+.banner {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.banner__image {
+  object-fit: cover;
+  width: 85%;
+  height: 13.75rem;
+  border-radius: 19px;
+  filter: brightness(80%);
+}
+
+.banner__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  margin: 0;
+  font-weight: 500;
+}

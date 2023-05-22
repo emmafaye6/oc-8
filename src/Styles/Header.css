@@ -1,0 +1,22 @@
+.header {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 9rem;
+}
+
+.header__logo {
+}
+
+.header__links a {
+  color: var(--primary-red);
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.header__links a:hover {
+  text-decoration: underline;
+}

@@ -9,7 +9,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/card" element={<Card />} />
+      <Route path="annonces/:id" element={<Card />} />
       <Route path="/about" element={<About />} />
       <Route path="/404" element={<PageNotFound />} />
       <Route path="*" element={<Navigate to="/404" />} />

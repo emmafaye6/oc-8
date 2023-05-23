@@ -7,7 +7,6 @@ function Home() {
   useEffect(() => {
     document.title = "Kasa - Accueil";
   }, []);
-
   return (
     <Layout>
       <Banner />
@@ -15,4 +14,5 @@ function Home() {
     </Layout>
   );
 }
+
 export default Home;

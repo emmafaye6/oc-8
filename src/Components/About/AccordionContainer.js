@@ -6,7 +6,7 @@ function AccordionContainer() {
     <div>
       <div className="accordion">
         {accordionData.map(({ header, text }) => (
-          <Accordion header={header} text={text} />
+          <Accordion header={header} text={text} key={header} />
         ))}
       </div>
     </div>

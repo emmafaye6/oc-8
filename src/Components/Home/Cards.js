@@ -8,7 +8,7 @@ function Cards() {
       {annonces.map(function (annonce) {
         return (
           <div key={annonce.id} className="card">
-            <Link to={"annonces/" + annonce.id}>
+            <Link to={`/annonces/${annonce.id}`}>
               <img
                 src={annonce.cover}
                 alt="Image de l'annonce"

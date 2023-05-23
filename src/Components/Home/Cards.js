@@ -1,7 +1,6 @@
 import "../../Styles/Home/Cards.css";
 import annonces from "../../Data/annonces.json";
 import { Link } from "react-router-dom";
-import { Component } from "react";
 
 function Cards() {
   return (

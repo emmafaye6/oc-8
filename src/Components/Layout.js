@@ -1,6 +1,5 @@
 import Footer from "./Footer";
 import Header from "./Header";
-import "../Styles/Layout.css";
 
 function Layout({ children }) {
   return (

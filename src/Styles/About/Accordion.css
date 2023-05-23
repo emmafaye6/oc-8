@@ -8,7 +8,7 @@
   line-height: 34px;
 }
 
-.accordion-title {
+.accordion__header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,12 +19,12 @@
   border-radius: 5px;
 }
 
-.accordion-title,
-.accordion-content {
+.accordion__header,
+.accordion__text {
   padding: 1rem;
 }
 
-.accordion-content {
+.accordion__text {
   background-color: var(--primary-grey);
   color: var(--primary-red);
   margin-bottom: 1rem;

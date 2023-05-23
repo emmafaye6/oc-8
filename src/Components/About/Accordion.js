@@ -7,8 +7,8 @@ function Accordion({ header, text }) {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="accordion-item">
-      <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+    <div>
+      <div className="accordion__header" onClick={() => setIsActive(!isActive)}>
         <div>{header}</div>
         <div>
           {isActive ? (
@@ -18,7 +18,7 @@ function Accordion({ header, text }) {
           )}
         </div>
       </div>
-      {isActive && <div className="accordion-content">{text}</div>}
+      {isActive && <div className="accordion__text">{text}</div>}
     </div>
   );
 }

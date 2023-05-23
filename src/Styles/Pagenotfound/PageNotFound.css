@@ -1,0 +1,45 @@
+.error,
+.error a {
+  color: var(--primary-red);
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error__h1 {
+  font-weight: 700;
+  font-size: 288px;
+  line-height: 20%;
+}
+
+.error__h2 {
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+}
+
+.error__link {
+  font-size: 18px;
+  margin-bottom: 7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .error {
+    padding: 2rem;
+  }
+  .error__h1 {
+    font-size: 96px;
+  }
+
+  .error__h2 {
+    font-size: 18px;
+  }
+
+  .error__link {
+    font-size: 14px;
+    margin: 2rem 0 6rem 0;
+  }
+}

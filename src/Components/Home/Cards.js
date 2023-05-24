@@ -9,11 +9,7 @@ function Cards() {
         return (
           <div key={annonce.id} className="card">
             <Link to={`/annonces/${annonce.id}`}>
-              <img
-                src={annonce.cover}
-                alt="Image de l'annonce"
-                className="card__image"
-              />
+              <img src={annonce.cover} alt="Annonce" className="card__image" />
               <p className="card__text">{annonce.title}</p>
             </Link>
           </div>

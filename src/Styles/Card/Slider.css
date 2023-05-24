@@ -1,0 +1,36 @@
+.slider {
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+}
+
+.slider__image {
+  object-fit: cover;
+  height: 20rem;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.slider__chevron {
+  position: absolute;
+  top: 40%;
+}
+
+.slider__chevrondroit {
+  right: 5%;
+  width: 3%;
+}
+
+.slider__chevrongauche {
+  left: 5%;
+  width: 3%;
+}
+
+.slider__counter {
+  position: absolute;
+  color: white;
+  left: 45%;
+  bottom: 5%;
+  font-weight: 500;
+  font-size: 1.2rem;
+}

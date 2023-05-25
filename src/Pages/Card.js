@@ -3,6 +3,7 @@ import "../Styles/Card.css";
 import annonces from "../Data/annonces.json";
 import Slider from "../Components/Card/Slider";
 import Layout from "../Components/Layout";
+import CardHeader from "../Components/Card/CardHeader";
 
 function Card() {
   const { id } = useParams();
@@ -11,6 +12,7 @@ function Card() {
   return (
     <Layout>
       <Slider />
+      <CardHeader />
     </Layout>
   );
 }

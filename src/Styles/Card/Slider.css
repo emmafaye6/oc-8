@@ -1,6 +1,6 @@
 .slider {
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
   position: relative;
 }
 
@@ -33,4 +33,10 @@
   bottom: 5%;
   font-weight: 500;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__counter {
+    display: none;
+  }
 }

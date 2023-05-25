@@ -1,0 +1,55 @@
+.cardheader {
+  padding: 0 10%;
+  color: var(--primary-red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.cardheader__title {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+}
+
+.cardheader__location {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.cardheader__tagscontainer {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  color: white;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.cardheader__tag {
+  background-color: var(--primary-red);
+  border-radius: 10px;
+  padding: 0.3rem 1.7rem;
+  margin: 0 1rem 1rem 0;
+}
+
+.cardheader__hostcontainer {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-left: 10%;
+}
+
+.cardheader__hostname {
+  font-size: 18px;
+  width: 25%;
+  margin-right: 20%;
+}
+
+.cardheader__hostpicture {
+  height: 64px;
+  width: 64px;
+  border-radius: 70%;
+}

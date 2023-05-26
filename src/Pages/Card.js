@@ -7,9 +7,6 @@ import CardHeader from "../Components/Card/CardHeader";
 import CardContent from "../Components/Card/CardContent";
 
 function Card() {
-  const { id } = useParams();
-  const listing = annonces.find((f) => f.id === id);
-
   return (
     <Layout>
       <Slider />

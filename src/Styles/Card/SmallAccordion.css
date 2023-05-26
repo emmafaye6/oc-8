@@ -1,0 +1,29 @@
+.smallaccordion {
+  width: 45%;
+  margin-right: 1rem;
+}
+
+.smallaccordion__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--primary-red);
+  color: white;
+  border-radius: 5px;
+}
+
+.smallaccordion__header,
+.smallaccordion__text {
+  padding: 0.7rem;
+}
+
+.smallaccordion__text {
+  background-color: var(--primary-grey);
+  color: var(--primary-red);
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  font-size: 18px;
+  line-height: 26px;
+}

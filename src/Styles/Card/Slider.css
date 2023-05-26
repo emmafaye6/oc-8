@@ -14,6 +14,7 @@
 .slider__chevron {
   position: absolute;
   top: 40%;
+  cursor: pointer;
 }
 
 .slider__chevrondroit {
@@ -33,6 +34,10 @@
   bottom: 5%;
   font-weight: 500;
   font-size: 1.2rem;
+}
+
+.displaynone {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {

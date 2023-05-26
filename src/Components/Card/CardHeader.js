@@ -1,6 +1,7 @@
 import annonces from "../../Data/annonces.json";
 import { useParams } from "react-router-dom";
 import "../../Styles/Card/CardHeader.css";
+import Stars from "./Stars";
 
 function CardHeader() {
   const { id } = useParams();
@@ -23,9 +24,12 @@ function CardHeader() {
           })}
         </ul>
       </section>
-      <div className="cardheader__hostcontainer">
-        <section className="cardheader__hostname">{host.name}</section>
-        <img src={host.picture} alt="" className="cardheader__hostpicture" />
+      <div className="cardheader__starshostcontainer">
+        <div className="cardheader__hostcontainer">
+          <section className="cardheader__hostname">{host.name}</section>
+          <img src={host.picture} alt="" className="cardheader__hostpicture" />
+        </div>
+        <Stars />
       </div>
     </div>
   );

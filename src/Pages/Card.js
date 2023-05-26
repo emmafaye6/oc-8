@@ -4,6 +4,7 @@ import annonces from "../Data/annonces.json";
 import Slider from "../Components/Card/Slider";
 import Layout from "../Components/Layout";
 import CardHeader from "../Components/Card/CardHeader";
+import CardContent from "../Components/Card/CardContent";
 
 function Card() {
   const { id } = useParams();
@@ -13,6 +14,7 @@ function Card() {
     <Layout>
       <Slider />
       <CardHeader />
+      <CardContent />
     </Layout>
   );
 }

@@ -1,4 +1,4 @@
-import Layout from "../Components/Layout.js";
+import Layout from "../Components/Layout/Layout.js";
 import Banner from "../Components/Home/Banner.js";
 import Cards from "../Components/Home/Cards.js";
 import { useEffect } from "react";

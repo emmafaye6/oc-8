@@ -1,13 +1,13 @@
 import { useState } from "react";
-import "../../Styles/About/Accordion.css";
+import "./Accordion.css";
 import upchevron from "../../Assets/upchevron.svg";
 import downchevron from "../../Assets/downchevron.svg";
 
-function Accordion({ header, text }) {
+function Accordion({ header, text, className }) {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div>
+    <div className={className}>
       <div className="accordion__header" onClick={() => setIsActive(!isActive)}>
         <div>{header}</div>
         <div>

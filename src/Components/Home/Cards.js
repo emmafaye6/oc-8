@@ -1,11 +1,11 @@
-import "../../Styles/Home/Cards.css";
+import "./Cards.css";
 import annonces from "../../Data/annonces.json";
 import { Link } from "react-router-dom";
 
 function Cards() {
   return (
     <div className="cardscontainer">
-      {annonces.map(function (annonce) {
+      {annonces.map((annonce) => {
         return (
           <div key={annonce.id} className="card">
             <Link to={`/annonces/${annonce.id}`}>

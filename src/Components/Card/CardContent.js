@@ -1,19 +1,20 @@
-import "../../Styles/Card/CardContent.css";
-import annonces from "../../Data/annonces.json";
-import { useParams } from "react-router-dom";
-import SmallAccordion from "../Card/SmallAccordion";
+import "./CardContent.css";
+import Accordion from "../About/Accordion";
+import "../../Components/About/Accordion.css";
 
 function CardContent({ infos }) {
   return (
     <div className="cardcontent">
-      <SmallAccordion
+      <Accordion
         header="Description"
         text={infos.description}
         key={infos.description}
+        className="smallaccordion"
       />
-      <SmallAccordion
+      <Accordion
+        className="smallaccordion"
         header="Équipements"
-        text={infos.equipments.map(function (equipment) {
+        text={infos.equipments.map((equipment) => {
           return (
             <ul className="equipmentlist" key={equipment}>
               <li key={equipment}>{equipment}</li>

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import chevrongauche from "../../Assets/chevrongauche.svg";
 import chevrondroit from "../../Assets/chevrondroit.svg";
-import "../../Styles/Card/Slider.css";
+import "./Slider.css";
 
 function Slider() {
   const { id } = useParams();

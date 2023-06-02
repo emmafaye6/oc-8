@@ -1,5 +1,5 @@
-import "../Styles/Pagenotfound/PageNotFound.css";
-import Layout from "../Components/Layout.js";
+import "./PageNotFound.css";
+import Layout from "../Components/Layout/Layout.js";
 import { Link } from "react-router-dom";
 
 function PageNotFound() {

@@ -1,4 +1,4 @@
-import "../../Styles/Home/Banner.css";
+import "./Banner.css";
 import BannerImage from "../../Assets/BannerImage.svg";
 
 function Banner() {

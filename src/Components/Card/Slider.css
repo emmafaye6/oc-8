@@ -44,4 +44,8 @@
   .slider__counter {
     display: none;
   }
+
+  .slider {
+    margin: 0 auto;
+  }
 }

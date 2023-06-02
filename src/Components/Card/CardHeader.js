@@ -1,4 +1,4 @@
-import "../../Styles/Card/CardHeader.css";
+import "./CardHeader.css";
 import Stars from "./Stars";
 
 function CardHeader({ infos }) {
@@ -8,7 +8,7 @@ function CardHeader({ infos }) {
         <h1 className="cardheader__title">{infos.title}</h1>
         <h2 className="cardheader__location">{infos.location}</h2>
         <ul className="cardheader__tagscontainer">
-          {infos.tags.map(function (tag) {
+          {infos.tags.map((tag) => {
             return (
               <li className="cardheader__tag" key={tag}>
                 {tag}

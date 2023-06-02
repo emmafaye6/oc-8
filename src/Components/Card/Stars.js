@@ -2,6 +2,7 @@ import annonces from "../../Data/annonces.json";
 import { useParams } from "react-router-dom";
 import FullStar from "../../Assets/FullStar.svg";
 import EmptyStar from "../../Assets/EmptyStar.svg";
+import "./CardHeader.css";
 
 function Stars() {
   const { id } = useParams();

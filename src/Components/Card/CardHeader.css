@@ -63,3 +63,36 @@
   width: 64px;
   border-radius: 70%;
 }
+
+@media screen and (max-width: 768px) {
+  .cardheader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: 85%;
+  }
+
+  .cardheader__starshostcontainer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cardheader__hostname {
+    margin: 0;
+  }
+
+  .cardheader__hostpicture {
+    margin-left: 10%;
+  }
+
+  .cardheader__hostcontainer {
+    margin: 0;
+  }
+
+  .cardheader__tagscontainer {
+    margin: 1rem 0;
+  }
+}

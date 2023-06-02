@@ -1,11 +1,10 @@
-import "./Styles/App.css";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Card from "./Pages/Card.js";
 import About from "./Pages/About.js";
 import PageNotFound from "./Pages/PageNotFound.js";
 import Home from "./Pages/Home.js";
 
-function App() {
+function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -17,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default Router;

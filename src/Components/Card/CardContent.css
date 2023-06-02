@@ -8,3 +8,9 @@
   list-style-type: none;
   padding: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .cardcontent {
+    flex-direction: column;
+  }
+}

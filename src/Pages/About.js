@@ -1,5 +1,4 @@
-import "../Styles/About.css";
-import Layout from "../Components/Layout";
+import Layout from "../Components/Layout/Layout";
 import AboutBanner from "../Components/About/AboutBanner";
 import AccordionContainer from "../Components/About/AccordionContainer";
 import { useEffect } from "react";

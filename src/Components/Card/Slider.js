@@ -1,27 +1,22 @@
-import annonces from "../../Data/annonces.json";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
 import chevrongauche from "../../Assets/chevrongauche.svg";
 import chevrondroit from "../../Assets/chevrondroit.svg";
 import "./Slider.css";
 
-function Slider() {
-  const { id } = useParams();
-  const { pictures } = annonces.find((f) => f.id === id);
-
+function Slider({ infos }) {
   const [slide, setSlide] = useState(0);
 
   const next = () => {
-    setSlide(slide === pictures.length - 1 ? 0 : slide + 1);
+    setSlide(slide === infos.pictures.length - 1 ? 0 : slide + 1);
   };
 
   const previous = () => {
-    setSlide(slide === 0 ? pictures.length - 1 : slide - 1);
+    setSlide(slide === 0 ? infos.pictures.length - 1 : slide - 1);
   };
 
   return (
     <div className="slider">
-      {pictures.length > 1 && (
+      {infos.pictures.length > 1 && (
         <img
           src={chevrongauche}
           onClick={previous}
@@ -29,7 +24,7 @@ function Slider() {
           className="slider__chevron slider__chevrongauche"
         />
       )}
-      {pictures.length > 1 && (
+      {infos.pictures.length > 1 && (
         <img
           src={chevrondroit}
           onClick={next}
@@ -38,19 +33,19 @@ function Slider() {
         />
       )}
 
-      {pictures.map((picture, index) => {
+      {infos.pictures.map((picture, index) => {
         return (
           <div key={index}>
             {index === slide && (
               <img
                 src={picture}
-                alt={pictures.description}
+                alt={infos.pictures.description}
                 className="slider__image"
               />
             )}
             {index === slide && (
               <span className="slider__counter">
-                {slide + 1}/{pictures.length}
+                {slide + 1}/{infos.pictures.length}
               </span>
             )}
           </div>

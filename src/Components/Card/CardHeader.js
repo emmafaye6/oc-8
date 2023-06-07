@@ -26,7 +26,7 @@ function CardHeader({ infos }) {
             className="cardheader__hostpicture"
           />
         </div>
-        <Stars />
+        <Stars infos={infos} />
       </div>
     </div>
   );

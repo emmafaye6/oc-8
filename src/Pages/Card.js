@@ -15,7 +15,7 @@ function Card() {
 
   return (
     <Layout>
-      <Slider />
+      <Slider infos={infos} />
       <CardHeader infos={infos} />
       <CardContent infos={infos} />
     </Layout>

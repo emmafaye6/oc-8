@@ -1,5 +1,6 @@
 import Layout from "../Components/Layout/Layout";
-import AboutContainer from "../Components/About/AboutContainer";
+import AboutBanner from "../Components/About/AboutBanner";
+import AccordionContainer from "../Components/About/AccordionContainer";
 import { useEffect } from "react";
 
 function About() {
@@ -9,7 +10,8 @@ function About() {
 
   return (
     <Layout>
-      <AboutContainer />
+      <AboutBanner />
+      <AccordionContainer />
     </Layout>
   );
 }
